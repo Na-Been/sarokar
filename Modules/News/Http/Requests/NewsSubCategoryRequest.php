@@ -1,0 +1,31 @@
+<?php
+
+namespace Modules\News\Http\Requests;
+
+use Illuminate\Foundation\Http\FormRequest;
+
+class NewsSubCategoryRequest extends FormRequest
+{
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array
+     */
+    public function rules()
+    {
+        return [
+            'sub_category_name'=>'required|unique:news_sub_categories,sub_category_name,'. request()->id,
+            'category_id'=>'required',
+        ];
+    }
+
+    /**
+     * Determine if the user is authorized to make this request.
+     *
+     * @return bool
+     */
+    public function authorize()
+    {
+        return true;
+    }
+}

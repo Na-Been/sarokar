@@ -1,0 +1,16 @@
+{
+    "Blog": true,
+    "User": true,
+    "Page": true,
+    "News": true,
+    "NewsCategory": true,
+    "BlogCategory": true,
+    "NewsSubCategory": true,
+    "Setting": true,
+    "OurTeam": true,
+    "Backend": true,
+    "Team": true,
+    "Request": true,
+    "SettingRequest": true,
+    "Photo": true
+}
